@@ -1,3 +1,17 @@
 h1 {
   color: #0691B4;
+  background-color: blueviolet;
+}
+
+h4 {
+  color: red;
+}
+
+button {
+  color: rgb(0, 208, 255);
+  background-color: blueviolet;
+}
+
+body {
+  background-color: rgb(83, 83, 83);
 }
