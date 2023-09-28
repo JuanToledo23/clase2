@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="estilos.css">
     <!-- Aquí va información importante pero no visible dentro del navegador -->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
     <title>Curso 1</title>
   </head>
+  
   <body>
-    <!-- Esto es lo que se verá en el navegador web -->
-    <h1>Juan Alberto Toledo Tello</h1>
-    <h4>
-      Instantly publish articles, drive more traffic, grow your email list, and
-      see your blog’s impact on sales.
-    </h4>
-    <p>
-      hola <b>mundo</b>
-      <u>texto subrayado</u>
-    </p>
-    <br/>
-    <b>texto negrita</b>
+    <header class="header">
+      <!-- Logo con link a la página principal -->
+      <a class="logo"><img src="logo.png" /></a>
+      <!-- Menú de navegación -->
+      <nav class="navbar">
+        <!-- Lista para menú de navegación -->
+        <ul>
+          <li><a href="#platform">Platform</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#customers">Customers</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <!-- Contenedor de acciones de usuario -->
+      <div class="actions">
+        <button class="primary-button">Sign In</button>
+        <button class="secundary-button">Start free trial</button>
+      </div>
+    </header>
 
-    <form>
-      <input type="email" />
-      <button type="submit">Enviar</button>
-    </form>
   </body>
 </html>
