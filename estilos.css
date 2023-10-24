@@ -13,19 +13,24 @@
 }
 
 .logo {
-  width: 15%;
-  height: 100%
+  width: 50px;
 }
 
 .navbar {
-  width: 70%;
   text-align: center;
   color: #025157;
   font-weight: 500;
+  background-color: #d9d9d9;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.padding-top-default {
+  padding: 66px;
 }
 
 .actions {
-  width: 14%;
   text-align: right;
   font-size: 14px;
   font-weight: 600;
@@ -37,18 +42,6 @@ img {
 }
 
 /* Estilos botones */
-button {
-  background-color: unset;
-  border: unset;
-  min-height: 40px;
-  min-width: 80px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: rgba(255, 213, 0, 1);
-}
 
 .primary-button {
   color: rgb(122, 178, 89);
@@ -109,19 +102,6 @@ a {
   width: 300px;
 }
 
-html {
-  background-color: aqua;
-  font-family: 'Mooli', sans-serif;
-  font-family: 'Oswald', sans-serif;
-}
-
-.animal-gallery {
-  display: grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  margin-top: 100px;
-  grid-gap: 10px;
-}
-
 .animal {
   text-align: center;
 }
@@ -131,38 +111,105 @@ html {
   height: 150px;
 }
 
-.animal-gallery > article:nth-child(1) {
+.animal-gallery > .animal:nth-child(1) {
   background-color: #970000;
 }
 
-.animal-gallery > article:nth-child(2) {
+.animal-gallery > .animal:nth-child(2) {
   background-color: #219700;
 }
 
-.animal-gallery > article:nth-child(3) {
+.animal-gallery > .animal:nth-child(3) {
   background-color: #003597;
 }
 
-.animal-gallery > article:nth-child(4) {
+.animal-gallery > .animal:nth-child(4) {
   background-color: #977b00;
 }
 
-.animal-gallery > article:nth-child(5) {
+.animal-gallery > .animal:nth-child(5) {
   background-color: #970080;
 }
 
-.animal-gallery > article:nth-child(6) {
+.animal-gallery > .animal:nth-child(6) {
   background-color: #280097;
 }
 
-.animal-gallery > article:nth-child(7) {
+.animal-gallery > .animal:nth-child(7) {
   background-color: #973200;
 }
 
-.animal-gallery > article:nth-child(8) {
+.animal-gallery > .animal:nth-child(8) {
   background-color: #009785;
 }
 
-.animal-gallery > article:nth-child(9) {
+.animal-gallery > .animal:nth-child(9) {
   background-color: #007497;
 }
+
+html {
+  font-family: 'Mooli', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.animal-gallery {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  margin-top: 3rem;
+  grid-gap: 10px;
+}
+
+.titulo {
+  font-size: 60px;
+}
+
+.carousel-indicators {
+  position: initial;
+}
+
+@media (max-width: 991px) {
+  .mobile-form {
+    flex-direction: column;
+  }
+  .mobile-form > .mx-2 {
+    margin-right: unset !important;
+    margin-left: unset !important;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .animal-gallery {
+    grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .titulo {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .article-container > div:nth-child(1) > img {
+    display: none;
+  }
+  .article-container {
+    flex-direction: column;
+  }
+  .animal-gallery {
+    grid-template: repeat(9, 1fr) / repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .article-container > div:nth-child(2) > img {
+    width: 200px;
+  }
+}
+

@@ -1,5 +1,0 @@
-Realizar un grid de 3x3
-que tenga un espaciado interno de 10px
-y que en cada seccion haya una imagen de animales con su nombre
-cada seccion va a tener un color de fondo diferente
-todo con la tipografia de Pixelify Sans
